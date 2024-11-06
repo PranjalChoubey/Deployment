@@ -11,13 +11,6 @@ import orderRouter from './routes/orderRoute.js'
 // App Config
 const app = express()
 const cors = require("cors");
-const corsConfig = {
-    origin: '*',
-    credential: true,
-    methods: ["GET", "POST", "PUT", "DELETE"],
-};
-app.options("", cors(corsConfig));
-app.use(cors(corsConfig));
 const port = process.env.PORT || 4000
 connectDB()
 connectCloudinary()
