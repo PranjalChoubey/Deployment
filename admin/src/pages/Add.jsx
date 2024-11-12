@@ -102,7 +102,7 @@ const Add = ({token}) => {
               <select onChange={(e) => setCategory(e.target.value)} className='w-full px-3 py-2'>
                   <option value="Kids">Kids</option>
                   <option value="Women">Women</option>
-                  <option value="Sets">Kids</option>
+                  <option value="Sets">Sets</option>
               </select>
             </div>
 
