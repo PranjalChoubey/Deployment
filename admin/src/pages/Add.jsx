@@ -100,9 +100,9 @@ const Add = ({token}) => {
             <div>
               <p className='mb-2'>Product category</p>
               <select onChange={(e) => setCategory(e.target.value)} className='w-full px-3 py-2'>
-                  <option value="Men">Men</option>
-                  <option value="Women">Women</option>
                   <option value="Kids">Kids</option>
+                  <option value="Women">Women</option>
+                  <option value="Sets">Kids</option>
               </select>
             </div>
 
@@ -111,7 +111,7 @@ const Add = ({token}) => {
               <select onChange={(e) => setSubCategory(e.target.value)} className='w-full px-3 py-2'>
                   <option value="Topwear">Topwear</option>
                   <option value="Bottomwear">Bottomwear</option>
-                  <option value="Winterwear">Winterwear</option>
+                  <option value="Fullset">Fullset</option>
               </select>
             </div>
 
@@ -143,6 +143,25 @@ const Add = ({token}) => {
 
             <div onClick={()=>setSizes(prev => prev.includes("XXL") ? prev.filter( item => item !== "XXL") : [...prev,"XXL"])}>
               <p className={`${sizes.includes("XXL") ? "bg-pink-100" : "bg-slate-200" } px-3 py-1 cursor-pointer`}>XXL</p>
+            </div>
+
+            <div onClick={()=>setSizes(prev => prev.includes("XXL") ? prev.filter( item => item !== "XXL") : [...prev,"XXL"])}>
+              <p className={`${sizes.includes("3XL") ? "bg-pink-100" : "bg-slate-200" } px-3 py-1 cursor-pointer`}>XXL</p>
+            </div>
+
+            <div onClick={()=>setSizes(prev => prev.includes("XXL") ? prev.filter( item => item !== "XXL") : [...prev,"XXL"])}>
+              <p className={`${sizes.includes("4XL") ? "bg-pink-100" : "bg-slate-200" } px-3 py-1 cursor-pointer`}>XXL</p>
+            </div>
+
+            <div onClick={()=>setSizes(prev => prev.includes("XXL") ? prev.filter( item => item !== "XXL") : [...prev,"XXL"])}>
+              <p className={`${sizes.includes("5XL") ? "bg-pink-100" : "bg-slate-200" } px-3 py-1 cursor-pointer`}>XXL</p>
+            </div>
+
+            <div onClick={()=>setSizes(prev => prev.includes("XXL") ? prev.filter( item => item !== "XXL") : [...prev,"XXL"])}>
+              <p className={`${sizes.includes("6XL") ? "bg-pink-100" : "bg-slate-200" } px-3 py-1 cursor-pointer`}>XXL</p>
+            </div>
+            <div onClick={()=>setSizes(prev => prev.includes("XXL") ? prev.filter( item => item !== "XXL") : [...prev,"XXL"])}>
+              <p className={`${sizes.includes("7XL") ? "bg-pink-100" : "bg-slate-200" } px-3 py-1 cursor-pointer`}>XXL</p>
             </div>
           </div>
         </div>
